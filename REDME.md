@@ -20,9 +20,8 @@
 * The application mainly uses four algorithms for curve fitting (since I don't have sufficient time), which are Lagrange Interpolation,
 Newton's Divided Difference Interpolation, Cubic Spline Interpolation and Polynomial Least Squares Approximation.
 * For data input, you can input them singly inside the GUI, or use Data.csv, which you can find in the folder.
-* As for GUI, I simply use the Dear ImGui library, and sincerely didn't dive deeply into its implementations, thus the GUI I made
-is just too "concise". :)
-* For plotting part, ImPlot library is a great help, but also I didn't make it aesthetic enough in the GUI. 
+* As for GUI, I simply use the Dear ImGui library. Frankly, I didn't dive deeply into its implementations, thus the GUI I made
+is just too "concise". :) 
 
 
 ## How To Use
