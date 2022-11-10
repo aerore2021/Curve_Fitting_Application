@@ -3,18 +3,13 @@
   <br>
   Curve Fitting Application
   <br>
-      ————ZJU's numerical analysis project
-  <br>
 </h1>
 </p>
 
 <p align="center">
   <a href="#illustrations">Illustrations</a> •
   <a href="#how-to-use">How To Use</a> •
-  <a href="#download">Download</a> •
   <a href="#credits">Credits</a> •
-  <a href="#related">Related</a> •
-  <a href="#license">License</a>
 </p>
 
 
@@ -33,6 +28,10 @@ is just too "concise". :)
 ## How To Use
 
 Download it and open *.sln file with Visual Studio. 
+
+> **Note**
+> one data example is included, if you want to test.
+ 
 
 ## Credits
 
