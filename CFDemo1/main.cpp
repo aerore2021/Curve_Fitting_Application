@@ -25,7 +25,7 @@ int main(int,char**) {
 		return 1;
 	GLFWwindow* window = glfwCreateWindow(1280, 720, "Curve Fitting", NULL, NULL);
 	SetUpWindow(window);
-	ImVec4 clear_color = ImVec4(0.45f, 0.55f, 0.6f, 1.0f);
+	ImVec4 clear_color = ImVec4(0.45f, 0.55f, 1.0f, 1.0f);
 
 	while (!glfwWindowShouldClose(window))
 	{

@@ -4,6 +4,10 @@
 #include "implot.h"
 #include "implot_internal.h"
 #include <stdio.h>
+#include <string>
+#include <fstream>
+#include <sstream>
+#include <iostream>
 #ifdef __APPLE__
 #define GL_SILENCE_DEPRECATION
 #endif
@@ -14,6 +18,22 @@
 #if defined(_MSC_VER) && (_MSC_VER >= 1900) && !defined(IMGUI_DISABLE_WIN32_FUNCTIONS)
 #pragma comment(lib, "legacy_stdio_definitions")
 #endif
+
+class Shader {
+public:
+	unsigned int ID;//×ÅÉ«Æ÷³ÌÐòID
+	unsigned int VAO, VBO, EBO;
+	unsigned int texture;
+	Shader(const char* vertexPath, const char* fragmentPath);
+	void use();
+	void setBool(const std::string& name, bool value) const;
+	void setInt(const std::string& name, int value) const;
+	void setFloat(const std::string& name, float value) const;
+	void initArgument(const char* imagePath);
+	void loadTexture(unsigned char* data, int width, int height);
+	~Shader();
+};
+
 
 void glfw_error_callback(int error, const char* description)
 {
